@@ -27,6 +27,7 @@ const handleSubmit = (e) => {
 };
 
 return (
+  <div className='login-page'>
     <div className="container mt-5">
       <h2>Inicio de Sesión</h2>
       {MensajeExitoso && <div className="alert alert-success">{MensajeExitoso}</div>}
@@ -57,6 +58,9 @@ return (
         <button type="submit" className="btn btn-success">Iniciar Sesión</button>
       </form>
     </div>
+  </div>
+
+    
   );
 };
 

@@ -1,9 +1,10 @@
-body {
+.register-page body,
+.login-page body {
     background-color: #ffff;
-
 }
 
-.container {
+.register-page .container,
+.login-page .container {
     background-color: #333;
     border: 2px solid #071013;
     border-radius: 10px;
@@ -11,40 +12,45 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.register-page h2,
+.login-page h2 {
     color: #ffff;
     text-align: center;
 }
 
-.form-label {
+.register-page .form-label,
+.login-page .form-label {
     color: #ffff;
 }
 
-.form-control {
+.register-page .form-control,
+.login-page .form-control {
     background-color: #ffff;
     border: 1px solid #071013;
     border-radius: 5px;
 }
 
-.btn-success {
+.register-page .btn-success,
+.login-page .btn-success {
     background-color: #51c504e5;
     border-color: #071013;
 }
 
-
-.btn-success:hover {
+.register-page .btn-success:hover,
+.login-page .btn-success:hover {
     background-color: #155724;
     border-color: #071013;
 }
 
-.alert-success {
+.register-page .alert-success,
+.login-page .alert-success {
     background-color: #d4edda;
     border-color: #c3e6cb;
     color: #155724;
-
 }
 
-.alert-danger {
+.register-page .alert-danger,
+.login-page .alert-danger {
     background-color: #f8d7da;
     border-color: #f5c6cb;
     color: #721c24;

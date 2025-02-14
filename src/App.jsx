@@ -4,17 +4,19 @@ import Home from "./components/2_Home/Home"
 import Navbar from "./components/1_Navbar/Navbar"
 import RegisterPage from "./components/1_Navbar/RegisterPage"
 import LoginPage from "./components/1_Navbar/LoginPage"
+import Cart from "./components/2_Home/Cart"
+
 
 const App = () => {
   return (
   <div>
-    <Navbar />
-    {/* <Home /> */}
-    <RegisterPage />
-    {/*<LoginPage />*/}
-    <Footer />
+  <Navbar />
+  {/*<Home /> */}
+  {/* <RegisterPage /> */}
+  {/* <LoginPage /> */}
+  <Cart />
+  <Footer />
   </div>
   );
   };
-  export default App;
-  
+  export default App

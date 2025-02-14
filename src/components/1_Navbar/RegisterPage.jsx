@@ -33,6 +33,8 @@ const RegisterPage = () => {
   };
 
   return (
+
+  <div className='register-page'>
     <div className="container mt-5">
       <h2>Registro de Usuario</h2>
       {MensajeExitoso && <div className="alert alert-success">{MensajeExitoso}</div>}
@@ -85,6 +87,8 @@ const RegisterPage = () => {
         <button type="submit" className="btn btn-success">Registrarse</button>
       </form>
     </div>
+ </div>
+    
   );
 };
 
