@@ -1,15 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Cards({ img, name, ingredients, description, price, button1Label, button1Action, button2Label, button2Action }) {
+function Cards({img, name, desc, ingredients, price, button1Label, button1Action, button2Label, button2Action }) {
   return (
     <div className="card" style={{ width: '18rem' , backgroundColor: '#333'  }}>
       <img src={img} className="card-img-top" alt={name} />
       <div className="card-body">
         <h5 className="card-title text-center text-white">{name}</h5>
+        <p className="card-text text-center text-white">{desc}</p>
         <hr className='text-white'/>
-        <p className="card-text text-center text-white"><strong>{ingredients}:</strong></p>
         <ul className="card-subtitle mb-2 text-muted text-center list-unstyled">
-          {description.map((item) => (
+          {ingredients.map((item) => (
             <li className='card-text text-white' key={item}>{item}</li>
           ))}
         </ul>

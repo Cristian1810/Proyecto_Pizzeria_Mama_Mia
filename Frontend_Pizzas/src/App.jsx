@@ -5,6 +5,7 @@ import Navbar from "./components/1_Navbar/Navbar"
 import RegisterPage from "./components/1_Navbar/RegisterPage"
 import LoginPage from "./components/1_Navbar/LoginPage"
 import Cart from "./components/2_Home/Cart"
+import Pizza from './components/2_Home/Pizza';
 
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
   {/*<Home /> */}
   {/* <RegisterPage /> */}
   {/* <LoginPage /> */}
-  <Cart />
+  {/*<Cart />*/}
+  <Pizza /> 
   <Footer />
   </div>
   );
