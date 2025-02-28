@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 function Cards({img, name, desc, ingredients, price, button1Label, button1Action, button2Label, button2Action }) {
   return (
@@ -16,7 +17,8 @@ function Cards({img, name, desc, ingredients, price, button1Label, button1Action
         <hr className='text-white'/>
         <h5 className="card-text text-center text-white">Precio: <strong>$</strong>{price}</h5>
         <div className="d-flex justify-content-between">
-        <button className="btn btn-light" style={{ border: '1px solid #000' }} onClick={button1Action}>{button1Label}</button>
+         {/* Se añadio la ruta "/pizza/p001" al boton "Ver mas" */}
+        <Link  to="/pizza/p001" className="btn btn-light" style={{ border: '1px solid #000' }} onClick={button1Action}>{button1Label}</Link>
         <button className="btn btn-dark" onClick={button2Action}>{button2Label}</button>
         </div>
       </div>

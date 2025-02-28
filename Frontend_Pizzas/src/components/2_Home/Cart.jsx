@@ -28,7 +28,7 @@ const handlePayment = () => {
 
 return (
     <div className="container mt-4">
-      <h2 className="text-star">Detalles del pedido:</h2>
+      <h3 className="text-star">Detalles del pedido:</h3>
       <div className="row justify-content-center">
         {cart.map((item) => (
           <Cart2 

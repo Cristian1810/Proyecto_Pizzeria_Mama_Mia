@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Cards2({ img, name, desc, ingredients, price }) {
+function Cards2({ img, name, desc, ingredients =[], price }) {
   return (
     <div className="card mb-4" style={{ maxWidth: '100%', height: 'auto' }}>
       <div className="row g-0">

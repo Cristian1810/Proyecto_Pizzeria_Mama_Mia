@@ -1,14 +1,15 @@
+import { Link } from 'react-router-dom';
 import './Navbar.css';
-import RegisterPage from './RegisterPage';
 
 const Navbar = () => {
 return (
     <div className="navbar">
         <h3 className='text-white' href="#home">Pizzería Mammá Mía!</h3>
-        <a href="#home">🍕Home</a>
-        <a href="#link">🔒Login</a>
-        <a href="./RegisterPage">🔐Register</a>
-        <a href="#contact" className='right'>🛒Total: $25.000</a>
+        <Link to="/">🍕Home</Link>
+        <Link to="/LoginPage">🔒Login</Link>
+        <Link to="/RegisterPage">🔐Register</Link>
+        <Link to="/Profile">👤Profile</Link>
+        <Link to="/Cart" className='right'>🛒Total: $25.000</Link>
     </div>
 );
 };
