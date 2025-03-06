@@ -20,7 +20,7 @@ import NotFound from './Pages/NotFound';
 import PizzaView from './Pages/PizzaView';
 
 // Carpeta Store
-import { CartProvider } from './components/4_Store/CartContext';
+import { CartProvider } from './assets/Store/CartContext';
 
 
 const App = () => {

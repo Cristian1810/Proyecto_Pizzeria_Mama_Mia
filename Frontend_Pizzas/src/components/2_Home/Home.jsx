@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useCart } from '../4_Store/CartContext';
+import { useCart } from '../../assets/Store/CartContext';
 import Cards from "./Cards";
 import Header from "./Header";
 
