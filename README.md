@@ -1,1 +1,1 @@
-Se realizo el consumo de Api, se hizo renderizado de las tarjetas y se utilizo el hook UseEffect
+Se realizo sistema de enrutamineto, creacion de la carpeta "Pages" mas sus vistas y aplicacion de React Router 
