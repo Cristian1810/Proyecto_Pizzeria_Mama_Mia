@@ -19,26 +19,26 @@ import ProfileView from "./Pages/ProfileView"
 import NotFound from './Pages/NotFound';
 import PizzaView from './Pages/PizzaView';
 
+// Carpeta Store
+import { CartProvider } from './components/4_Store/CartContext';
+
 
 const App = () => {
   return (
   <>
     <BrowserRouter>
+    <CartProvider>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<HomeView />} />
-        <Route path="/RegisterPage" element={<RegisterView />} />
-        <Route path="/LoginPage" element={<LoginView />} />
-        <Route path='/Profile' element={<ProfileView />} />
-        <Route path='/Cart' element={<CartView />} />  
-        <Route path='*' element={<NotFound />} />
-        <Route path="/pizza/p001" element={<PizzaView />} />
-      </Routes>
-      {/* <Home />  */}
-      {/* <RegisterPage /> */}
-      {/* <LoginPage /> */}
-      {/*<Cart />*/}
-      {/* {<Pizza />} */}
+        <Routes>
+          <Route path="/" element={<HomeView />} />
+          <Route path="/RegisterPage" element={<RegisterView />} />
+          <Route path="/LoginPage" element={<LoginView />} />
+          <Route path='/Profile' element={<ProfileView />} />
+          <Route path='/Cart' element={<CartView />} />  
+          <Route path='*' element={<NotFound />} />
+          <Route path="/pizza/p001" element={<PizzaView />} />
+        </Routes>
+    </CartProvider>
       <Footer />
     </BrowserRouter>
   

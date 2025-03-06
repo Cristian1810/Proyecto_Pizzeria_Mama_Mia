@@ -1,52 +1,39 @@
-import React, { useState } from 'react';
-import { pizzaCart } from '../../pizzas';
+import React from 'react';
+import { useCart } from '../4_Store/CartContext';
 import Cart2 from './Cart2';
 import "./Cart.css";
 
 const Cart = () => {
-const [cart, setCart] = useState(pizzaCart);
+  const { cart, handleRemove, handleIncrease, handleDecrease, getTotalPrice, handlePayment } = useCart();
 
-const handleRemove = (id) => {
-    setCart(cart.filter(item => item.id !== id));
-};
-
-const handleIncrease = (id) => {
-    setCart(cart.map(item => item.id === id ? { ...item, quantity: item.quantity + 1 } : item));
-};
-
-const handleDecrease = (id) => {
-    setCart(cart.map(item => item.id === id && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item));
-};
-
-const getTotalPrice = () => {
-    return cart.reduce((total, item) => total + item.price * item.quantity, 0);
-};
-
-const handlePayment = () => {
-    alert(`Total a pagar:$ ${getTotalPrice()}`);
-};
-
-return (
+  return (
     <div className="container mt-4">
       <h3 className="text-star">Detalles del pedido:</h3>
-      <div className="row justify-content-center">
-        {cart.map((item) => (
-          <Cart2 
-            id={item.id}
-            img={item.img}
-            name={item.name}
-            price={item.price}
-            quantity={item.quantity}
-            handleRemove={handleRemove}
-            handleIncrease={handleIncrease}
-            handleDecrease={handleDecrease}
-          />
-        ))}
+      <div className="justify-content-center">
+        {cart.length === 0 ? (
+          <p>El carrito está vacío</p>
+        ) : (
+          cart.map((item) => (
+            <Cart2 
+              key={item.id}
+              id={item.id}
+              img={item.img}
+              name={item.name}
+              price={item.price}
+              quantity={item.quantity}
+              handleRemove={handleRemove}
+              handleDecrease={handleDecrease}
+              handleIncrease={handleIncrease}
+            />
+          ))
+        )}
       </div>
-      <div className="text-star">
-        <h3>Total: ${getTotalPrice()}</h3>
-        <button className="btn btn-success" onClick={handlePayment}>Pagar</button>
-      </div>
+      {cart.length > 0 && (
+        <div className="text-star">
+          <h3>Total a pagar: ${getTotalPrice()}</h3>
+          <button className="btn btn-success" onClick={handlePayment}>Pagar</button>
+        </div>
+      )}
     </div>
   );
 };

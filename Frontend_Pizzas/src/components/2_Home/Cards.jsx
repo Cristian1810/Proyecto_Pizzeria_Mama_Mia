@@ -9,9 +9,9 @@ function Cards({img, name, desc, ingredients, price, button1Label, button1Action
         <h5 className="card-title text-center text-white">{name}</h5>
         <p className="card-text text-center text-white">{desc}</p>
         <hr className='text-white'/>
-        <ul className="card-subtitle mb-2 text-muted text-center list-unstyled">
+        <ul className="card-subtitle mb-2 text-white text-center list-unstyled"><strong>Ingredientes:</strong>
           {ingredients.map((item) => (
-            <li className='card-text text-white' key={item}>{item}</li>
+            <li className='card-text mb-2 text-white text-start' key={item}>🍕{item}</li>
           ))}
         </ul>
         <hr className='text-white'/>
