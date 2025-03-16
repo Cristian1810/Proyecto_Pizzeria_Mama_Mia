@@ -11,7 +11,7 @@ function Profile() {
           <h1>👤</h1>
           <Card.Text>
             <strong>Email:</strong>
-            <h5>PepitoJuan@gmail.com</h5>
+            <h5>test@test.com</h5>
           </Card.Text>
           <Button className='btn btn-danger' type="button">
             Cerrar Sesión
