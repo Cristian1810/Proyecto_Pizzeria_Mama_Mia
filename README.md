@@ -1,3 +1,5 @@
-Se realizo aplicacion de Context para permitir el manejo del carrito de compra,
-El Navbar consume el Cart Context para mostrar el precio total de los productos en el carrito y
-Se implemento el consumo de Cart Context para que el usuario pueda agregar productos al carrito desde la página de Home
+Se realizo aplicacion de UserContext para el metodo Logout, 
+implementacion de las rutas protegidas y 
+Utilizacion del UserContext que deshabilita el boton de pagar en el Cart en caso de que el token sea False.
+
+Nota: No supe como hacer el primer punto del hito 😥
