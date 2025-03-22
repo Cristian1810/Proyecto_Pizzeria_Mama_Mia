@@ -1,5 +1,2 @@
-Se realizo aplicacion de UserContext para el metodo Logout, 
-implementacion de las rutas protegidas y 
-Utilizacion del UserContext que deshabilita el boton de pagar en el Cart en caso de que el token sea False.
+  Se implemento la autenticación real con el backend utilizando JWT y se implemento el consumo de todas las rutas mencionadas. 
 
-Nota: No supe como hacer el primer punto del hito 😥
