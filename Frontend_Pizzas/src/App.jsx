@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 // Carpeta Components
 import Footer from "./components/3_Footer/Footer"
 import Home from "./components/2_Home/Home"
